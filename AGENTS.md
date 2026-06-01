@@ -49,6 +49,8 @@ Do not implement broad changes without explicit instruction.
 
 Do not continue autonomously from one phase to the next.
 
+When a new repository is created from this template, rename the title in `README.md` immediately so it does not say `pair-programming-with-nicolas`.
+
 For every implementation step:
 
 1. Confirm the requested scope.

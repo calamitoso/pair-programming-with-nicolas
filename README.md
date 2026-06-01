@@ -1,4 +1,4 @@
-# pair-programming-with-nicolas
+# Frontend Pair-Programming Starter
 
 A lightweight frontend pair-programming starter for interview practice and live coding sessions.
 
