@@ -4,38 +4,6 @@ A lightweight frontend pair-programming starter for interview practice and live 
 
 The repo is designed to help me move quickly from a problem statement to a working, polished frontend solution while staying in control of the implementation.
 
-## Goals
-
-This starter optimizes for:
-
-- Fast local setup
-- React + plain JavaScript
-- HTML, CSS, and browser fundamentals
-- Lightweight planning before coding
-- AI-assisted but human-controlled implementation
-- Semantic HTML
-- Accessibility basics
-- Mobile-first responsive UI
-- Snappy, tasteful visual polish
-- Clean Git history
-
-## Non-goals
-
-This is not a production app starter.
-
-It intentionally avoids:
-
-- TypeScript by default
-- UI frameworks
-- Routing
-- State management libraries
-- Animation libraries
-- Heavy test setup
-- Complex build tooling
-- Overly abstract architecture
-
-Those tools may be added when a specific problem requires them, but they should not be part of the default path.
-
 ## Quick start
 
 ```bash
@@ -63,23 +31,35 @@ npm run lint
 
 ## Operating model
 
-I am the driver.
+This repo supports frontend pair-programming practice and live coding. The goal is not to create a production-grade system. The goal is to demonstrate structured problem solving, clear communication, practical AI fluency, and the ability to deliver a polished working frontend under time constraints.
 
-AI may assist with bounded tasks, but I make the final decisions.
+I am the driver. I will write and explain the solution, clarify requirements, manage scope, and make implementation decisions. AI tools may assist with bounded tasks, but they do not own the solution or make final decisions.
+
+The intended signal:
+
+> I know how to turn ambiguity into an executable plan, use AI to increase throughput, preserve human judgment, and still maintain frontend craft.
+
+The default stack is Vite, React, plain JavaScript, HTML, and CSS. Plain JavaScript preserves fast feedback cycles in constrained live coding. For production code, TypeScript may be the better tradeoff.
+
+This starter intentionally avoids UI frameworks, routing, state management libraries, animation libraries, heavy test setup, complex build tooling, and overly abstract architecture by default. Those tools may be added when a specific problem requires them.
+
+Use a lightweight working spec before coding, then implement in small slices.
 
 The default flow is:
 
 1. Restate the problem
 2. Fill the lightweight implementation plan
 3. Review and edit the plan
-4. Build the MVP
-5. Add responsive styling
-6. Add accessibility pass
-7. Add visual polish if time allows
-8. Validate manually
-9. Commit with a clean message
+4. Build the app shell and data
+5. Add core rendering
+6. Add the main interaction
+7. Add responsive styling
+8. Add an accessibility pass
+9. Add visual polish and motion if time allows
+10. Validate manually
+11. Commit with a clean message
 
-## Useful files
+Useful files:
 
 - `AGENTS.md` — rules for AI-assisted work
 - `docs/implementation-plan-template.md` — lightweight working spec
@@ -89,17 +69,6 @@ The default flow is:
 - `prompts/` — reusable prompts for bounded AI assistance
 - `.agents/skills/` — portable repo-scoped skills for Codex and compatible agents
 
-## Codex skills
-
 Codex discovers repo-scoped `$skill-name` entries from `.agents/skills/` when launched inside this repository. Keep template-specific skills there so they travel with the project.
 
 If a newly added skill does not appear in the `$` selector, restart Codex.
-
-## Default stack
-
-- Vite
-- React
-- Plain JavaScript
-- CSS
-
-The default choice is React with plain JavaScript to preserve fast feedback cycles during constrained live coding. In a production setting, TypeScript may be the better tradeoff for maintainability and shared contracts.

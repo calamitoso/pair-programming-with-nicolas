@@ -3,6 +3,7 @@ import { starterCards } from './data/sampleData.js'
 function App() {
   return (
     <main className="app-shell">
+      {/* Starting point — replace with problem-specific implementation */}
       <section className="hero" aria-labelledby="page-title">
         <p className="eyebrow">Frontend pairing starter</p>
         <h1 id="page-title">Build the smallest useful experience first.</h1>

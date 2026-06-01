@@ -32,6 +32,15 @@ Do not introduce TypeScript unless the existing repo already uses it or the huma
 
 Do not add dependencies unless there is a clear benefit and the human approves first.
 
+## Reference documents
+
+- `docs/implementation-plan-template.md` — use when filling a plan
+- `docs/css-repertoire.md` — consult during styling and polish passes
+- `docs/ai-usage-guidelines.md` — boundaries for AI-assisted tasks
+- `docs/github-checklist.md` — consult before committing or pushing
+- `docs/interview-script.md` — for human use only, not for agent consumption
+- `prompts/` — reusable prompts for each session phase
+
 ## Operating rules
 
 Do not take over the project.
@@ -88,38 +97,11 @@ Do not add styling that harms readability, contrast, keyboard access, or reduced
 
 ## CSS rules
 
-Use mobile-first CSS.
-
-Prefer:
-
-- CSS custom properties
-- `clamp()`
-- `min()`
-- `max()`
-- `calc()`
-- `aspect-ratio`
-- `:focus-visible`
-- `@media (prefers-reduced-motion: reduce)`
-- transform/opacity transitions for motion
-
-Use advanced CSS only when it improves the result and does not create unnecessary browser risk.
-
-Treat experimental CSS as optional polish, not foundational functionality.
+Consult `docs/css-repertoire.md` during styling and polish passes.
 
 ## Accessibility rules
 
-Pay attention to:
-
-- Semantic landmarks
-- Button vs link semantics
-- Labels and accessible names
-- Keyboard interaction
-- Visible focus
-- Color contrast
-- Reduced motion
-- Announcements only where useful
-
-Do not add ARIA where native HTML is sufficient.
+Consult the accessibility-review skill or `prompts/03-review-accessibility.md`.
 
 ## AI usage boundaries
 
