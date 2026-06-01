@@ -1,3 +1,8 @@
+---
+name: accessibility-review
+description: Use when reviewing a frontend UI for accessibility issues, including semantic HTML, keyboard access, focus states, accessible names, contrast risks, and reduced motion concerns.
+---
+
 # Accessibility Review Skill
 
 Review the current UI for:

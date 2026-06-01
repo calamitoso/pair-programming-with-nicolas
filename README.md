@@ -87,7 +87,13 @@ The default flow is:
 - `docs/github-checklist.md` — clean Git flow
 - `docs/css-repertoire.md` — CSS techniques to keep available
 - `prompts/` — reusable prompts for bounded AI assistance
-- `skills/` — focused skill instructions for Codex or another agent
+- `.agents/skills/` — portable repo-scoped skills for Codex and compatible agents
+
+## Codex skills
+
+Codex discovers repo-scoped `$skill-name` entries from `.agents/skills/` when launched inside this repository. Keep template-specific skills there so they travel with the project.
+
+If a newly added skill does not appear in the `$` selector, restart Codex.
 
 ## Default stack
 

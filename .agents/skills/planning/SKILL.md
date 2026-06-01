@@ -1,3 +1,8 @@
+---
+name: planning
+description: Use when turning a frontend problem statement into a lightweight implementation plan with MVP scope, polish, tradeoffs, assumptions, and deferrals.
+---
+
 # Planning Skill
 
 Use this skill to turn a problem statement into a lightweight implementation plan.

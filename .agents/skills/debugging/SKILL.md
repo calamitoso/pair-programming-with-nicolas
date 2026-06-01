@@ -1,3 +1,8 @@
+---
+name: debugging
+description: Use when isolating and fixing a specific frontend bug with a minimal change and clear validation steps.
+---
+
 # Debugging Skill
 
 Use this skill to isolate and fix a specific bug.

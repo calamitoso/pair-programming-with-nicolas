@@ -1,3 +1,8 @@
+---
+name: responsive-css-review
+description: Use when reviewing a frontend UI for responsive CSS issues, including mobile-first layout, overflow, spacing, typography, touch targets, and breakpoint behavior.
+---
+
 # Responsive CSS Review Skill
 
 Review the current UI for responsive behavior.

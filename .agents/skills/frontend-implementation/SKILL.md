@@ -1,3 +1,8 @@
+---
+name: frontend-implementation
+description: Use when implementing one bounded frontend slice in React, plain JavaScript, HTML, or CSS while preserving existing behavior and avoiding unnecessary dependencies.
+---
+
 # Frontend Implementation Skill
 
 Use this skill to implement one bounded frontend slice.

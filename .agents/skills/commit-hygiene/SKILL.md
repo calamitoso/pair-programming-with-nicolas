@@ -1,3 +1,8 @@
+---
+name: commit-hygiene
+description: Use when creating or reviewing concise conventional commit messages for frontend project changes, including guidance on splitting mixed diffs.
+---
+
 # Commit Hygiene Skill
 
 Use this skill to create clean commit messages.
