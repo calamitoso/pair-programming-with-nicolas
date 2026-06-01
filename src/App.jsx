@@ -1,0 +1,28 @@
+import { starterCards } from './data/sampleData.js'
+
+function App() {
+  return (
+    <main className="app-shell">
+      <section className="hero" aria-labelledby="page-title">
+        <p className="eyebrow">Frontend pairing starter</p>
+        <h1 id="page-title">Build the smallest useful experience first.</h1>
+        <p className="hero-copy">
+          This starter is intentionally lightweight: React, plain JavaScript,
+          semantic HTML, and CSS ready for fast iteration.
+        </p>
+      </section>
+
+      <section className="card-grid" aria-label="Starter workflow">
+        {starterCards.map((card) => (
+          <article className="workflow-card" key={card.title}>
+            <span className="card-step">{card.step}</span>
+            <h2>{card.title}</h2>
+            <p>{card.description}</p>
+          </article>
+        ))}
+      </section>
+    </main>
+  )
+}
+
+export default App
