@@ -55,7 +55,7 @@ When a new repository is created from this template, rename the title in `README
 
 For every implementation step:
 
-1. Confirm the requested scope.
+1. Confirm the requested scope against the current step in section 14 of the implementation plan.
 2. Make the smallest useful change.
 3. Preserve existing working behavior.
 4. Summarize what changed.
@@ -78,6 +78,8 @@ Separate:
 Avoid enterprise-scale architecture.
 
 The goal is not production completeness. The goal is a working, well-reasoned, polished solution with visible tradeoff management.
+
+Section 14 of the filled implementation plan is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan. Once new decisions emerge to fix the blocker, update the plan accordingly. 
 
 ## Coding rules
 
