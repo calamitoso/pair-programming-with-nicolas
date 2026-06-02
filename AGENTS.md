@@ -51,7 +51,9 @@ Do not continue autonomously from one phase to the next.
 
 Do not make product or design assumptions. The human is the product owner and designer; validate every product decision with them before implementing.
 
-When a new repository is created from this template, rename the title in `README.md` immediately so it does not say `pair-programming-with-nicolas`.
+When a new repository is created from this template, immediately:
+- Rename the `name` field in `package.json` to match the project name.
+- Rename the title in `README.md` so it no longer says `pair-programming-with-nicolas`.
 
 For every implementation step:
 

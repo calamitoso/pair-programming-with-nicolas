@@ -1,5 +1,11 @@
 import { starterCards } from './data/sampleData.js'
 
+// Demo mode: set VITE_APP_MODE=demo in .env.local to load pre-populated sample data.
+// Use this to show a visually rich state during a presentation or design review.
+// Replace DEMO_HABITS with problem-specific sample data before enabling.
+const IS_DEMO_MODE = import.meta.env.VITE_APP_MODE === 'demo'
+const DEMO_HABITS = []
+
 function App() {
   return (
     <main className="app-shell">
