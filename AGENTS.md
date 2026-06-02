@@ -32,14 +32,31 @@ Do not introduce TypeScript unless the existing repo already uses it or the huma
 
 Do not add dependencies unless there is a clear benefit and the human approves first.
 
+## Team
+
+This session is run as a simulated cross-functional team. Each persona is a distinct role with a bounded responsibility. The engineering lead (you) orchestrates, reviews outputs, resolves conflicts, and approves before the next phase begins.
+
+| Persona | Skill | Primary output |
+|---|---|---|
+| Product owner | $persona-product-owner | docs/product-brief.md |
+| Designer | $persona-designer | docs/design-brief.md |
+| Architect | $persona-architect | docs/solution-design.md |
+| Project manager | $persona-project-manager | docs/project-status.md |
+| Frontend expert | $persona-frontend-expert | implementation slices |
+| SDET | $persona-sdet | quality assessment |
+
+Engineering skills available at any time: `$debugging`, `$commit-hygiene`.
+
 ## Reference documents
 
-- `docs/implementation-plan-template.md` — use when filling a plan
+- `docs/product-brief.md` — filled by persona-product-owner
+- `docs/design-brief.md` — filled by persona-designer
+- `docs/solution-design.md` — filled by persona-architect
+- `docs/project-status.md` — maintained by persona-project-manager
 - `docs/css-repertoire.md` — consult during styling and polish passes
 - `docs/ai-usage-guidelines.md` — boundaries for AI-assisted tasks
 - `docs/github-checklist.md` — consult before committing or pushing
 - `docs/interview-script.md` — for human use only, not for agent consumption
-- `prompts/` — reusable prompts for each session phase
 
 ## Operating rules
 
@@ -57,7 +74,7 @@ When a new repository is created from this template, immediately:
 
 For every implementation step:
 
-1. Confirm the requested scope against the current step in section 15 of the implementation plan.
+1. Confirm the requested scope against the current step in section 5 of `docs/solution-design.md`.
 2. Make the smallest useful change.
 3. Preserve existing working behavior.
 4. Summarize what changed.
@@ -66,22 +83,15 @@ For every implementation step:
 
 ## Planning rules
 
-When asked to help with planning, use `docs/implementation-plan-template.md`.
+Planning is distributed across three personas invoked in sequence:
 
-Keep the plan lightweight enough for a 75-minute session.
+1. `$persona-product-owner` — produces docs/product-brief.md
+2. `$persona-designer [aesthetic]` — produces docs/design-brief.md
+3. `$persona-architect` — produces docs/solution-design.md
 
-Separate:
+Each document must be reviewed and approved by the engineering lead before the next persona is invoked.
 
-- MVP
-- nice-to-have polish
-- production hardening
-- explicit deferrals
-
-Avoid enterprise-scale architecture.
-
-The goal is not production completeness. The goal is a working, well-reasoned, polished solution with visible tradeoff management.
-
-Section 15 of the filled implementation plan is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan. Once new decisions emerge to fix the blocker, update the plan accordingly. 
+The implementation sequence in section 5 of solution-design.md is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval from the engineering lead. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan.
 
 ## Coding rules
 
@@ -121,13 +131,13 @@ Consult `docs/css-repertoire.md` during styling and polish passes.
 
 ## Accessibility rules
 
-Consult the accessibility-review skill or `prompts/03-review-accessibility.md`.
+Consult `$persona-designer` in review mode.
 
 ## AI usage boundaries
 
 Good tasks:
 
-- Fill the implementation plan template
+- Fill product, design, and solution planning documents
 - Suggest component decomposition
 - Generate sample data
 - Review edge cases
