@@ -55,7 +55,7 @@ When a new repository is created from this template, rename the title in `README
 
 For every implementation step:
 
-1. Confirm the requested scope against the current step in section 14 of the implementation plan.
+1. Confirm the requested scope against the current step in section 15 of the implementation plan.
 2. Make the smallest useful change.
 3. Preserve existing working behavior.
 4. Summarize what changed.
@@ -79,7 +79,7 @@ Avoid enterprise-scale architecture.
 
 The goal is not production completeness. The goal is a working, well-reasoned, polished solution with visible tradeoff management.
 
-Section 14 of the filled implementation plan is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan. Once new decisions emerge to fix the blocker, update the plan accordingly. 
+Section 15 of the filled implementation plan is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan. Once new decisions emerge to fix the blocker, update the plan accordingly. 
 
 ## Coding rules
 
@@ -100,6 +100,18 @@ Avoid large rewrites.
 Do not remove accessibility affordances.
 
 Do not add styling that harms readability, contrast, keyboard access, or reduced-motion preferences.
+
+## Testing rules
+
+Write unit tests for pure logic functions and state transformers when they are non-trivial.
+
+Do not test rendering or UI behavior unless the problem explicitly requires it.
+
+Do not let test setup or test writing consume meaningful session time.
+
+Place tests in `src/test/`.
+
+Run `npm test` to confirm tests pass before committing.
 
 ## CSS rules
 

@@ -117,7 +117,19 @@ I will validate by checking:
 - browser console
 - any relevant performance or motion concerns
 
-## 14. Implementation sequence
+## 14. Testing strategy
+
+Pure logic and state transformers worth unit testing:
+
+- ...
+
+Explicitly out of scope for this session:
+
+- rendering and UI behavior (unless the problem requires it)
+- integration or end-to-end tests
+- test coverage targets
+
+## 15. Implementation sequence
 
 1. App shell and sample data
 2. Core rendering
@@ -169,6 +181,18 @@ The solution is successful if:
 - Product cards render from data
 - Category controls filter the visible cards
 - Empty filter results show a simple message
+
+## 14. Testing strategy
+
+Pure logic and state transformers worth unit testing:
+
+- streak calculation from a list of completed dates
+- empty/zero state handling in derived totals
+
+Explicitly out of scope for this session:
+
+- rendering tests
+- integration tests
 
 ## 6. MVP scope
 
