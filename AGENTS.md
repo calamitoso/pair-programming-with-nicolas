@@ -49,6 +49,8 @@ Do not implement broad changes without explicit instruction.
 
 Do not continue autonomously from one phase to the next.
 
+Do not make product or design assumptions. The human is the product owner and designer; validate every product decision with them before implementing.
+
 When a new repository is created from this template, rename the title in `README.md` immediately so it does not say `pair-programming-with-nicolas`.
 
 For every implementation step:
