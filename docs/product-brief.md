@@ -14,11 +14,10 @@
 ## 3. Assumptions
 <!-- What are you treating as true in order to proceed? Be explicit. -->
 
-## 4. Outcomes and success criteria
-<!-- What does done look like to the business? What observable outcomes tell us we succeeded? -->
+## 4. MVP scope and success criteria
+<!-- What ships in this session, and what does done look like for each item.
+     If it is on this list it is in scope and a success criterion.
+     If it is not on this list it is deferred. -->
 
-## 5. MVP scope
-<!-- What will we achieve in the time available? Be ruthless. -->
-
-## 6. Out of scope and tradeoffs
+## 5. Out of scope and tradeoffs
 <!-- What are we deliberately not building? What are we trading off to stay scoped? Name it so it cannot creep in. -->
