@@ -49,15 +49,25 @@ Read the problem statement. Restate it in your own words to confirm you understa
 
 ---
 
-### 2. Engage the product owner
+### 2. Fill the product brief
+
+Open `docs/product-brief.md` and fill it live in conversation with the interviewer.
+
+Work through each section out loud:
+- Restate the problem in your own words
+- Ask clarifying questions and record the decisions
+- Declare your assumptions explicitly
+- Define what done looks like
+- Scope the MVP ruthlessly
+- Name what is out of scope
+
+**Optional:** invoke the product owner to pressure-test your brief before handing off.
 
 ```
 $persona-product-owner
-
-[problem statement]
 ```
 
-**You:** Read the product brief. Approve it, or redirect on any point before moving on. Make any scope decisions explicit out loud.
+**You:** Read the review. Address any gaps or risks before moving on. This step takes thirty seconds and demonstrates that you actively challenge your own decisions.
 
 ---
 

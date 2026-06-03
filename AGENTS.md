@@ -38,7 +38,7 @@ This session is run as a simulated cross-functional team. Each persona is a dist
 
 | Persona | Skill | Primary output |
 |---|---|---|
-| Product owner | $persona-product-owner | docs/product-brief.md |
+| Product owner | $persona-product-owner | reviews docs/product-brief.md |
 | Designer | $persona-designer | docs/design-brief.md |
 | Architect | $persona-architect | docs/solution-design.md |
 | Project manager | $persona-project-manager | docs/project-status.md |
@@ -85,7 +85,7 @@ For every implementation step:
 
 Planning is distributed across three personas invoked in sequence:
 
-1. `$persona-product-owner` — produces docs/product-brief.md
+1. Engineering lead fills `docs/product-brief.md` live in conversation with the stakeholder. Invoke `$persona-product-owner` optionally to review and pressure-test the brief before proceeding.
 2. `$persona-designer [aesthetic]` — produces docs/design-brief.md
 3. `$persona-architect` — produces docs/solution-design.md
 
