@@ -40,7 +40,7 @@ This session is run as a simulated cross-functional team. Each persona is a dist
 |---|---|---|
 | Product owner | $persona-product-owner | reviews docs/product-brief.md |
 | Designer | $persona-designer | docs/design-brief.md |
-| Architect | $persona-architect | docs/solution-design.md |
+| Architect | $persona-architect | reviews docs/solution-design.md |
 | Project manager | $persona-project-manager | docs/project-status.md |
 | Frontend expert | $persona-frontend-expert | implementation slices |
 | SDET | $persona-sdet | quality assessment |
@@ -87,7 +87,7 @@ Planning is distributed across three personas invoked in sequence:
 
 1. Engineering lead fills `docs/product-brief.md` live in conversation with the stakeholder. Invoke `$persona-product-owner` optionally to review and pressure-test the brief before proceeding.
 2. `$persona-designer [aesthetic]` — produces docs/design-brief.md
-3. `$persona-architect` — produces docs/solution-design.md
+3. Engineering lead fills `docs/solution-design.md` live in conversation with the interviewer. Invoke `$persona-architect` optionally to review and pressure-test the solution design before proceeding.
 
 Each document must be reviewed and approved by the engineering lead before the next persona is invoked.
 

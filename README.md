@@ -83,13 +83,26 @@ Aesthetic tokens: `retrofuturism`, `bauhaus`, `soviet-era propaganda`, `memphis`
 
 ---
 
-### 4. Engage the architect
+### 4. Fill the solution design
+
+Open `docs/solution-design.md` and fill it live in conversation with the interviewer.
+
+Work through each section out loud:
+- Summarize the approach and name the principal components
+- Describe how state will be managed
+- Model the data entities the app needs
+- Map every view the app needs to display as a state machine
+- Sequence the implementation starting with scaffolding
+
+Keep it moving. The goal is a clear enough picture to start building — not a complete specification.
+
+**Optional:** invoke the architect to pressure-test your solution design before handing off.
 
 ```
 $persona-architect
 ```
 
-**You:** Review the implementation sequence carefully — this becomes the canonical execution order for the session. Approve the solution design before moving on.
+**You:** Read the review. Address any gaps before moving on. Pay particular attention to the sequence assessment — the implementation sequence is the contract the frontend expert works from.
 
 ---
 

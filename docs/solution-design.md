@@ -1,11 +1,31 @@
 # Solution design
 
-> Fill this document by invoking $persona-architect after the product brief and design brief are approved.
+> Filled live by the engineering lead in conversation with the interviewer.
+> Invoke $persona-architect at any point to review and pressure-test this document.
+
+---
 
 ## 1. Solution summary
-## 2. Component and file plan
-## 3. State and data model
-## 4. Key interactions and events
+<!-- One short paragraph describing the overall approach. Name the principal components. -->
+
+## 2. State
+<!-- How will state be managed? Local, lifted, shared? What triggers state changes? -->
+
+## 3. Data model
+<!-- Shape and document the data entities the app needs. Keep it concise. -->
+
+## 4. Views (state machine)
+<!-- Describe every state the app needs to display, even if there is no literal state machine.
+     This drives the scaffolding-first implementation sequence below. -->
+
 ## 5. Implementation sequence
-## 6. Validation plan
-## 7. Tradeoffs and deferrals
+<!-- Canonical execution order. Do not reorder without approval.
+
+- [ ] 1. Build scaffolding (all views rendered, no logic)
+- [ ] 2. [State / view name]
+- [ ] 3. [State / view name]
+- [ ] n. Accessibility and responsive pass
+- [ ] n+1. Visual polish
+- [ ] n+2. Quality gate ($persona-sdet)
+- [ ] n+3. Commit ($commit-hygiene)
+-->
