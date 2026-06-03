@@ -25,6 +25,9 @@ Confirm the requested step against the implementation sequence in solution-desig
 - Write meaningful names. Comment complex logic only.
 - Do not remove accessibility affordances.
 - Do not add styling that harms contrast, keyboard access, or reduced-motion preferences.
+- Any value that could vary between real and demo conditions — current date, tick speed, or any other time or state dependency — must go through an adapter in `src/adapters/demo.js`. Never read from `window.__DEMO__` directly in component code.
+- If a new overridable value is needed, add an adapter function to `src/adapters/demo.js` and a corresponding control to `src/components/DemoPanel.jsx`. Follow the established pattern in both files.
+- Never add demo controls inline in app components or in `App.jsx`. All demo controls live in `DemoPanel` exclusively.
 
 ## After implementing
 

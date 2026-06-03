@@ -71,19 +71,7 @@ $persona-product-owner
 
 ---
 
-### 3. Engage the designer
-
-```
-$persona-designer [aesthetic token]
-```
-
-Aesthetic tokens: `retrofuturism`, `bauhaus`, `soviet-era propaganda`, `memphis`, `wabi-sabi`, or leave blank for considered modernism.
-
-**You:** Read the mood translation first. Redirect if the aesthetic interpretation misses the mark. Approve the design brief before moving on.
-
----
-
-### 4. Fill the solution design
+### 3. Fill the solution design
 
 Open `docs/solution-design.md` and fill it live in conversation with the interviewer.
 
@@ -103,6 +91,20 @@ $persona-architect
 ```
 
 **You:** Read the review. Address any gaps before moving on. Pay particular attention to the sequence assessment — the implementation sequence is the contract the frontend expert works from.
+
+---
+
+### 4. Engage the designer
+
+```
+$persona-designer [aesthetic token]
+```
+
+Aesthetic tokens: `retrofuturism`, `bauhaus`, `soviet-era propaganda`, `memphis`, `wabi-sabi`, or leave blank for considered modernism.
+
+The designer reads both the approved product brief and solution design. The state machine in the solution design is the primary input for interaction and state design.
+
+**You:** Read the mood translation first. Redirect if the aesthetic interpretation misses the mark. Approve the design brief before moving on.
 
 ---
 

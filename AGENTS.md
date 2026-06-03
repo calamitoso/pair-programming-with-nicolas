@@ -83,13 +83,13 @@ For every implementation step:
 
 ## Planning rules
 
-Planning is distributed across three personas invoked in sequence:
+Planning is distributed across three phases completed in sequence:
 
 1. Engineering lead fills `docs/product-brief.md` live in conversation with the stakeholder. Invoke `$persona-product-owner` optionally to review and pressure-test the brief before proceeding.
-2. `$persona-designer [aesthetic]` — produces docs/design-brief.md
-3. Engineering lead fills `docs/solution-design.md` live in conversation with the interviewer. Invoke `$persona-architect` optionally to review and pressure-test the solution design before proceeding.
+2. Engineering lead fills `docs/solution-design.md` live in conversation with the interviewer. Invoke `$persona-architect` optionally to review and pressure-test the solution design before proceeding.
+3. `$persona-designer [aesthetic]` — reads both approved documents and produces `docs/design-brief.md`.
 
-Each document must be reviewed and approved by the engineering lead before the next persona is invoked.
+Each document must be reviewed and approved by the engineering lead before the next phase begins.
 
 The implementation sequence in section 5 of solution-design.md is the canonical execution sequence. Do not reorder, merge, split, or decompose its steps without explicitly flagging the proposed change and waiting for approval from the engineering lead. If a blocker makes the original sequence unworkable, surface it and stop — do not silently replan.
 

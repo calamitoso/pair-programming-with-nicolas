@@ -50,8 +50,25 @@ Before accepting AI output, check:
 
 ## Demo mode
 
-When the session requires a visually rich starting state for presentation or design review, use the built-in demo mode pattern rather than hardcoding data directly into component state.
+Set `VITE_APP_MODE=demo` in `.env.local` to activate demo mode. This renders the `DemoPanel` at the bottom of the viewport and initializes `window.__DEMO__` with default values.
 
-Set `VITE_APP_MODE=demo` in `.env.local` and define `DEMO_HABITS` (or equivalent sample data) near the top of `App.jsx`. Pass `IS_DEMO_MODE` to the initial `useState` call to switch between clean and pre-populated states.
+### DemoPanel
 
-This keeps demo scaffolding out of production logic and makes it easy to strip before committing.
+`src/components/DemoPanel.jsx` is pre-built in the template. It is mounted as a sibling to the app root in `main.jsx` and has zero coupling to the app component tree. It is collapsible and only renders when `VITE_APP_MODE=demo`.
+
+To add a new control, add an input to `DemoPanel` and write its value to `window.__DEMO__` in the sync `useEffect`. Then add a corresponding adapter in `src/adapters/demo.js`.
+
+### Demo adapters
+
+`src/adapters/demo.js` is the only place app code should read demo-controlled values. Never read from `window.__DEMO__` directly in component or utility code.
+
+Available adapters out of the box:
+- `getCurrentDate()` — returns the demo date override or today's real date
+- `getCurrentDateString()` — same, as YYYY-MM-DD string
+- `getTickSpeed()` — returns the demo tick speed or 1000ms
+
+Add new adapters here as sessions require them. Follow the same pattern: read from `window.__DEMO__` with a safe fallback to the real value.
+
+### Console inspection
+
+At any point during a demo or test session, `window.__DEMO__` in the browser console shows the full current control surface and its live values.
