@@ -1,5 +1,3 @@
-import { starterCards } from './data/sampleData.js'
-
 // Demo mode: set VITE_APP_MODE=demo in .env.local to load pre-populated sample data.
 // Use this to show a visually rich state during a presentation or design review.
 // Replace DEMO_HABITS with problem-specific sample data before enabling.
@@ -19,15 +17,6 @@ function App() {
         </p>
       </section>
 
-      <section className="card-grid" aria-label="Starter workflow">
-        {starterCards.map((card) => (
-          <article className="workflow-card" key={card.title}>
-            <span className="card-step">{card.step}</span>
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
-          </article>
-        ))}
-      </section>
     </main>
   )
 }

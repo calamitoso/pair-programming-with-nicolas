@@ -6,7 +6,10 @@
 ---
 
 ## 1. Solution summary
-<!-- One short paragraph describing the overall approach. Name the principal components. -->
+<!-- One short paragraph describing the overall approach.
+     Name the principal components you expect to create — file names and one-line responsibilities.
+     Keep it brief. This is the earliest moment to make component structure visible before scaffolding begins.
+     Example: App.jsx (root state and view routing), ShelfCard.jsx (shelf preview on main view), BookRow.jsx (book entry in shelf view). -->
 
 ## 2. State
 <!-- How will state be managed? Local, lifted, shared? What triggers state changes? -->
